@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.owangwang.dhc_rt.MainActivity">
+    <LinearLayout
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <ImageView
+            android:layout_width="139dp"
+            android:layout_height="45dp"
+            android:src="@mipmap/logo"/>
+
+
+        <TextView
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择车辆"
+            android:layout_gravity="center_vertical"
+            />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.17"></Spinner>
+
+        <TextView
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="故障系统"
+            android:layout_gravity="center_vertical"
+            />
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.17">
+
+
+        </Spinner>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+    <LinearLayout
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            />
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+     android:gravity="center"
+            android:text="A1"
+            />
+ <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+     android:gravity="center"
+            android:text="B1"
+            />
+ <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+     android:gravity="center"
+            android:text="C1"
+            />
+ <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+     android:gravity="center"
+            android:text="C2"
+            />
+ <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+     android:gravity="center"
+            android:text="B2"
+            />
+ <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+     android:gravity="center"
+            android:text="A2"
+            />
+ <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal">
+        <View
+            android:background="#ddffdd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+       <LinearLayout
+           android:id="@+id/chexiang_1"
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="6"
+           android:orientation="horizontal"
+           >
+            <fragment
+            android:name="com.owangwang.dhc_rt.Chexiang1Fragment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:layout="@layout/chexiang_gride"
+            android:layout_weight="1"/>
+           <fragment
+               android:name="com.owangwang.dhc_rt.Chexiang2Fragment"
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:layout_height="wrap_content"
+               tools:layout="@layout/chexiang_gride2" />
+           <fragment
+               android:name="com.owangwang.dhc_rt.Chexiang3Fragment"
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:layout_height="wrap_content"
+               tools:layout="@layout/chexiang_gride3" />
+            <fragment
+               android:name="com.owangwang.dhc_rt.Chexiang4Fragment"
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:layout_height="wrap_content"
+               tools:layout="@layout/chexiang_gride4" />
+           <fragment
+           android:name="com.owangwang.dhc_rt.Chexiang5Fragment"
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:layout_height="wrap_content"
+           tools:layout="@layout/chexiang_gride5" />
+           <fragment
+               android:name="com.owangwang.dhc_rt.Chexiang6Fragment"
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:layout_height="wrap_content"
+               tools:layout="@layout/chexiang_gride6" />
+
+       </LinearLayout>
+
+        <View
+            android:background="#ddffdd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
